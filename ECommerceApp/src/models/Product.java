@@ -13,15 +13,11 @@ public class Product implements Prototype {
         this.category = category;
         this.price = price;
     }
-
-    public int getId() {
-        return id;
+public Product(int id,String name, String category, double price) {
+        this.name = name;
+        this.category = category;
+        this.price = price;
     }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public String getName() {
         return name;
     }
@@ -35,7 +31,14 @@ public class Product implements Prototype {
     }
 
     @Override
-    public Product clone() {
+    public  Product clone() {
         return new Product(this.name, this.category, this.price);
     }
+
+    public int getId() {
+        return id;
+    }
+
+  
+
 }

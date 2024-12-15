@@ -19,11 +19,26 @@ public class CartManager {
         return instance;
     }
 
-    public void addToCart(Product product) {
+    public void addProduct(Product product) {
         cart.add(product);
+        System.out.println(product.getName() + " added to the cart.");
     }
+       public void clearCart() {
+        cart.clear();
+    }
+    public double calculateCartTotal() {
+        double total = 0.0;
+
+        // Iterate through all products in the cart
+        for (Product product : cart) {
+            total += product.getPrice();
+        }
+
+       return total;
+}
 
     public List<Product> getCartItems() {
         return cart;
     }
+    
 }
