@@ -17,7 +17,8 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import models.Order;
-import patterns.factory.OrderProcessorFactory;
+import patterns.builder.OrderBuilder;
+import patterns.factory.OrderFactory;
 import patterns.singleton.CartManager;
 import patterns.singleton.PaymentGateway;
 
@@ -657,8 +658,13 @@ public class MainUI extends javax.swing.JFrame {
         return;        
         }
         
-                  
-        Order order= OrderProcessorFactory.createOrderProcessor(location, totalPrice, type,CstmrName);
+        OrderBuilder builder =new OrderBuilder();  
+        
+        Order order= builder.setCstmrName(CstmrName)
+                .setLocation(location)
+                .setTotalPrice(totalPrice)
+                .setType(type)
+                .build();
         
         DatabaseConnection.getInstance().insertOrder(order);
         

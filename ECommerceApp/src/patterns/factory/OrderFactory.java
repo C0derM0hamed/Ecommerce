@@ -13,7 +13,7 @@ import models.Order;
  *
  * @author moham
  */
-public class OrderProcessorFactory {
+public class OrderFactory {
     public static Order createOrderProcessor( String Location, double TotalPrice, String type,String CstmrName) {
         switch (type.toLowerCase()) {
             case "standard":
