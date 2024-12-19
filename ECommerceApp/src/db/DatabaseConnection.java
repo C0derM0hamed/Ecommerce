@@ -1,5 +1,7 @@
 package db;
 
+// We use ADO (Active Data Object) to deal with database in our project
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -18,20 +20,15 @@ public class DatabaseConnection {
 
     // Private constructor for singleton instance
     private DatabaseConnection() {
-        try {
-            connection = DriverManager.getConnection(URL, USER, PASSWORD);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
     }
-
+ //retrieves the single instance of the DatabaseConnection
     public static DatabaseConnection getInstance() {
         if (instance == null) {
             instance = new DatabaseConnection();
         }
         return instance;
     }
-
+   //checks if there’s an active connection. if not optain one
     public Connection getConnection() {
         // Check if the connection is closed, and re-establish it if needed
         try {
@@ -43,7 +40,7 @@ public class DatabaseConnection {
         }
         return connection;
     }
-
+    //prepares and executes an SQL query to insert a new product into the database.
     public static void insertProduct(Product product) {
         String sql = "INSERT INTO products (name, category, price) VALUES (?, ?, ?)";
 
@@ -61,24 +58,8 @@ public class DatabaseConnection {
             e.printStackTrace();
         }
     }
-    
-    public void insertProductIntoCard(Product product) {
-        String sql = "INSERT INTO card ( name, category, price) VALUES ( ?, ?, ?)";
-         try (PreparedStatement pstmt = getInstance().getConnection().prepareStatement(sql)) {
-            pstmt.setString(1, product.getName());
-            pstmt.setString(2, product.getCategory());
-            pstmt.setDouble(3, product.getPrice());
-
-            int rowsAffected = pstmt.executeUpdate();
-            if (rowsAffected > 0) {
-                System.out.println("Product inserted successfully!");
-            }
-        } catch (SQLException e) {
-            System.out.println("Error inserting product: " + e.getMessage());
-            e.printStackTrace();
-        }
-    }
-    //(String Location, double TotalPrice, String type)
+   
+   //prepares and executes an SQL query to insert a new order into the database. 
     public void insertOrder(Order order)
     {
             String sql = "INSERT INTO Orderss (Location,TotalPrice,Type,CstmrName) VALUES ( ?, ?, ?, ?)";
@@ -97,6 +78,8 @@ public class DatabaseConnection {
             e.printStackTrace();
         }
     }
+    
+    //Closes the database connection when it's no longer needed.
     public static void closeConnection() {
         if (instance != null && instance.connection != null) {
             try {

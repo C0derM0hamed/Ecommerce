@@ -1,11 +1,13 @@
 package patterns.singleton;
 
+// Card Manager have list of product the user will buy it
+
 import java.util.ArrayList;
 import java.util.List;
-import models.Product;
 import models.ProductComponent;
 
 public class CartManager {
+    
     private static CartManager instance;
     private List <ProductComponent> cart;
 

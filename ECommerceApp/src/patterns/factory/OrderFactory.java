@@ -1,19 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package patterns.factory;
 
+//Use Factory to create opject without know the details of concrete class
+
 import models.Order;
-/*
- * @author mohamedmostafa,
- * Yasmeen Elewa,
- * Tarek Abdallah,
- * Asmaa Khaled,
- * Carol Moussa   
- */
-public class OrderFactory {                //( String Location, double TotalPrice, String type,String cstmrName
+
+public class OrderFactory {  
     public static Order createOrderProcessor( String Location, double TotalPrice, String type,String CstmrName) {
         switch (type.toLowerCase()) {
             case "standard":
