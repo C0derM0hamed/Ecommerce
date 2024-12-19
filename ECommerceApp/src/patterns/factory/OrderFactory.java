@@ -6,14 +6,14 @@
 package patterns.factory;
 
 import models.Order;
-
-
-
-/**
- *
- * @author moham
+/*
+ * @author mohamedmostafa,
+ * Yasmeen Elewa,
+ * Tarek Abdallah,
+ * Asmaa Khaled,
+ * Carol Moussa   
  */
-public class OrderFactory {
+public class OrderFactory {                //( String Location, double TotalPrice, String type,String cstmrName
     public static Order createOrderProcessor( String Location, double TotalPrice, String type,String CstmrName) {
         switch (type.toLowerCase()) {
             case "standard":

@@ -2,7 +2,7 @@ package models;
 
 import patterns.prototype.Prototype;
 
-public class Product implements Prototype {
+public class Product implements Prototype ,ProductComponent {
     private int id;
     private String name;
     private String category;
