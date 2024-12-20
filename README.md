@@ -4,7 +4,7 @@ This is a Java-based desktop application for managing product listings, customer
 
 ## Features
 
-- Add, update, and manage products.
+- Add products.
 - Manage a shopping cart using a Singleton pattern.
 - Process orders using a Factory pattern.
 - Clone products using a Prototype pattern.
@@ -51,7 +51,7 @@ This is a Java-based desktop application for managing product listings, customer
 
 2. **Database Configuration:**
    - Create a database named `ECommerceDB`.
-   - Run the SQL scripts in `database_setup.sql` to set up tables (`Products`, `Cart`, `Orders`).
+   - Run the SQL scripts in `database_setup.sql` to set up tables (`Products`, `Orders`).
    - Update the `DatabaseConnection` class with your SQL Server credentials.
 
 3. **Run the Application:**
@@ -82,19 +82,27 @@ ECommerceSystem
 ├── src
 │   ├── db
 │   │   └── DatabaseConnection.java
+│   ├── ecommerceapp
+│   │   └── ECommerceApp.java
 │   ├── models
+│   │   ├── Order.java
 │   │   ├── Product.java
+│   │   └── ProductComponent.java
+│   ├── patterns.builder
+│   │   └── OrderBuilder
+│   ├── patterns.decorator
+│   │   ├── ProductDecorator.java
+│   │   └── WarrantyDecorator.java
+│   ├── patterns.factory
+│   │   ├── OrderFactory.java
+│   │   └── ProductFactory.java
+│   ├── patterns.prototype
+│   │   └── prototype.java
+│   ├── patterns.singleton
 │   │   ├── CartManager.java
-│   │   ├── PaymentGateway.java
-│   │   ├── ProductFactory.java
-│   │   └── OrderFactory.java
+│   │   └── PaymentGateway.java
 │   ├── ui
 │   │   └── MainUI.java
-│   └── utils
-│       └── decorators
-│           ├── ProductDecorator.java
-│           └── WarrantyDecorator.java
-├── database_setup.sql
 └── README.md
 ```
 
@@ -102,19 +110,15 @@ ECommerceSystem
 
 ## Contributors
 
-1. **Database Manager:** [Name]
-2. **Back-End Developer:** [Name]
-3. **GUI Developer:** [Name]
-4. **Integration Specialist:** [Name]
-5. **Documentation Specialist:** [Name]
+1. **Mohamed Mostafa**
+2. **Yasmeen Elewa** 
+3. **Tarek Abdallah**
+4. **Asmaa Khaled** 
+5. **Carol Moussa**
+6. **Ziad Ahmed**
 
 ---
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
 
 ## Acknowledgments
 
