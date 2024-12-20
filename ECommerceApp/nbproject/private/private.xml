@@ -5,27 +5,15 @@
             <url>src/ui/MainUI.java</url>
             <bookmark id="1">
                 <name/>
-                <line>716</line>
+                <line>760</line>
                 <key/>
             </bookmark>
         </file>
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/moham/Downloads/ECommerceApp/ECommerceApp/src/patterns/factory/OrderFactory.java</file>
-            <file>file:/C:/Users/moham/Downloads/ECommerceApp/ECommerceApp/src/patterns/decorator/ProductDecorator.java</file>
-            <file>file:/C:/Users/moham/Downloads/ECommerceApp/ECommerceApp/src/db/DatabaseConnection.java</file>
-            <file>file:/C:/Users/moham/Downloads/ECommerceApp/ECommerceApp/src/patterns/decorator/WarrantyDecorator.java</file>
-            <file>file:/C:/Users/moham/Downloads/ECommerceApp/ECommerceApp/src/ecommerceapp/ECommerceApp.java</file>
-            <file>file:/C:/Users/moham/Downloads/ECommerceApp/ECommerceApp/src/patterns/factory/ProductFactory.java</file>
-            <file>file:/C:/Users/moham/Downloads/ECommerceApp/ECommerceApp/src/models/ProductComponent.java</file>
-            <file>file:/C:/Users/moham/Downloads/ECommerceApp/ECommerceApp/src/models/Product.java</file>
-            <file>file:/C:/Users/moham/Downloads/ECommerceApp/ECommerceApp/src/patterns/prototype/Prototype.java</file>
             <file>file:/C:/Users/moham/Downloads/ECommerceApp/ECommerceApp/src/ui/MainUI.java</file>
-            <file>file:/C:/Users/moham/Downloads/ECommerceApp/ECommerceApp/src/patterns/singleton/PaymentGateway.java</file>
-            <file>file:/C:/Users/moham/Downloads/ECommerceApp/ECommerceApp/src/patterns/singleton/CartManager.java</file>
-            <file>file:/C:/Users/moham/Downloads/ECommerceApp/ECommerceApp/src/patterns/builder/OrderBuilder.java</file>
-            <file>file:/C:/Users/moham/Downloads/ECommerceApp/ECommerceApp/src/models/Order.java</file>
+            <file>file:/C:/Users/moham/Downloads/ECommerceApp/ECommerceApp/src/ecommerceapp/ECommerceApp.java</file>
         </group>
     </open-files>
 </project-private>
