@@ -31,6 +31,7 @@ public class MainUI extends javax.swing.JFrame {
     payCompoBox.addItem("PayPal");
     typeBox.addItem("Standard");
      typeBox.addItem("Express");
+
     // </editor-fold>
     }
       
@@ -115,12 +116,18 @@ public class MainUI extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         jPanel7 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
-        Orderpanel = new javax.swing.JPanel();
-        panelorder = new javax.swing.JPanel();
-        jPanel10 = new javax.swing.JPanel();
-        jScrollPane3 = new javax.swing.JScrollPane();
-        OrderTable = new javax.swing.JTable();
-        jLabel3 = new javax.swing.JLabel();
+        jPanel4 = new javax.swing.JPanel();
+        jPanel5 = new javax.swing.JPanel();
+        nameField = new javax.swing.JTextField();
+        priceField = new javax.swing.JTextField();
+        categoryComboBox = new javax.swing.JComboBox<>();
+        CloneProductButton = new javax.swing.JButton();
+        AddProductButton = new javax.swing.JButton();
+        ToCardButton = new javax.swing.JButton();
+        jPanel8 = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        tableModel = new javax.swing.JTable();
+        jLabel2 = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         ConfirmButton = new javax.swing.JButton();
@@ -135,18 +142,12 @@ public class MainUI extends javax.swing.JFrame {
         jScrollPane2 = new javax.swing.JScrollPane();
         CardTable = new javax.swing.JTable();
         jLabel4 = new javax.swing.JLabel();
-        jPanel4 = new javax.swing.JPanel();
-        jPanel5 = new javax.swing.JPanel();
-        nameField = new javax.swing.JTextField();
-        priceField = new javax.swing.JTextField();
-        categoryComboBox = new javax.swing.JComboBox<>();
-        CloneProductButton = new javax.swing.JButton();
-        AddProductButton = new javax.swing.JButton();
-        ToCardButton = new javax.swing.JButton();
-        jPanel8 = new javax.swing.JPanel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        tableModel = new javax.swing.JTable();
-        jLabel2 = new javax.swing.JLabel();
+        Orderpanel = new javax.swing.JPanel();
+        panelorder = new javax.swing.JPanel();
+        jPanel10 = new javax.swing.JPanel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        OrderTable = new javax.swing.JTable();
+        jLabel3 = new javax.swing.JLabel();
 
         jLabel6.setText("jLabel6");
 
@@ -179,67 +180,114 @@ public class MainUI extends javax.swing.JFrame {
 
         jTabbedPane6.addTab("Home               ", jPanel3);
 
-        panelorder.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanel4.setForeground(new java.awt.Color(214, 107, 221));
+        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel10.setBackground(new java.awt.Color(0, 0, 0,80));
-        jPanel10.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Complete Order", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Harrington", 1, 18), new java.awt.Color(255, 255, 255))); // NOI18N
-        jPanel10.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanel5.setBackground(new java.awt.Color(0, 0, 0,80));
+        jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Add Product", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Harrington", 1, 18), new java.awt.Color(255, 255, 255))); // NOI18N
+        jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        OrderTable.setFont(new java.awt.Font("Times New Roman", 0, 14));
-        OrderTable.setModel(new javax.swing.table.DefaultTableModel(
+        nameField.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Name", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Century Gothic", 0, 18))); // NOI18N
+        nameField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nameFieldActionPerformed(evt);
+            }
+        });
+        jPanel5.add(nameField, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 136, 410, 60));
+
+        priceField.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Price", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Century Gothic", 0, 18))); // NOI18N
+        jPanel5.add(priceField, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 240, 410, 60));
+
+        categoryComboBox.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Category", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Century Gothic", 0, 18))); // NOI18N
+        categoryComboBox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                categoryComboBoxActionPerformed(evt);
+            }
+        });
+        jPanel5.add(categoryComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(56, 360, 420, 69));
+
+        CloneProductButton.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
+        CloneProductButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/images/clone.jpg"))); // NOI18N
+        CloneProductButton.setText("Clone");
+        CloneProductButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CloneProductButtonActionPerformed(evt);
+            }
+        });
+        jPanel5.add(CloneProductButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 510, 140, 60));
+
+        AddProductButton.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
+        AddProductButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/images/add.jpg"))); // NOI18N
+        AddProductButton.setText("Add");
+        AddProductButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AddProductButtonActionPerformed(evt);
+            }
+        });
+        jPanel5.add(AddProductButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 510, 125, 60));
+
+        ToCardButton.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
+        ToCardButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/images/add.jpg"))); // NOI18N
+        ToCardButton.setText(" Cart");
+        ToCardButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ToCardButtonActionPerformed(evt);
+            }
+        });
+        jPanel5.add(ToCardButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 510, 120, 60));
+
+        jPanel4.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, 500, 660));
+
+        jPanel8.setBackground(new java.awt.Color(0, 0, 0,80));
+        jPanel8.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Products Item", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Harrington", 1, 18), new java.awt.Color(255, 255, 255))); // NOI18N
+        jPanel8.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+
+        tableModel.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
             new String [] {
-                "Id", "Location", "TotalPrice", "Type", "customers"
+                "Id", "Name", "Category", "Price"
             }
         ) {
             Class[] types = new Class [] {
-                java.lang.Integer.class, java.lang.String.class, java.lang.Double.class, java.lang.String.class, java.lang.String.class
-            };
-            boolean[] canEdit = new boolean [] {
-                false, false, false, false, false
+                java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.Double.class
             };
 
             public Class getColumnClass(int columnIndex) {
                 return types [columnIndex];
             }
-
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
-            }
         });
-        OrderTable.setRowHeight(20);
-        OrderTable.setRowMargin(5);
-        jScrollPane3.setViewportView(OrderTable);
-        if (OrderTable.getColumnModel().getColumnCount() > 0) {
-            OrderTable.getColumnModel().getColumn(0).setResizable(false);
-            OrderTable.getColumnModel().getColumn(0).setPreferredWidth(1);
-            OrderTable.getColumnModel().getColumn(1).setResizable(false);
-            OrderTable.getColumnModel().getColumn(2).setResizable(false);
-            OrderTable.getColumnModel().getColumn(3).setResizable(false);
-            OrderTable.getColumnModel().getColumn(4).setResizable(false);
+        jScrollPane1.setViewportView(tableModel);
+        if (tableModel.getColumnModel().getColumnCount() > 0) {
+            tableModel.getColumnModel().getColumn(0).setMinWidth(1);
+            tableModel.getColumnModel().getColumn(0).setPreferredWidth(1);
+            tableModel.getColumnModel().getColumn(0).setMaxWidth(1);
         }
 
-        jPanel10.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 70, 1010, 350));
-
-        panelorder.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 1070, 480));
-
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/images/order.jpg"))); // NOI18N
-        panelorder.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1110, 770));
-
-        javax.swing.GroupLayout OrderpanelLayout = new javax.swing.GroupLayout(Orderpanel);
-        Orderpanel.setLayout(OrderpanelLayout);
-        OrderpanelLayout.setHorizontalGroup(
-            OrderpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panelorder, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
+        jPanel8.setLayout(jPanel8Layout);
+        jPanel8Layout.setHorizontalGroup(
+            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 484, Short.MAX_VALUE)
+                .addContainerGap())
         );
-        OrderpanelLayout.setVerticalGroup(
-            OrderpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panelorder, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 774, Short.MAX_VALUE)
+        jPanel8Layout.setVerticalGroup(
+            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel8Layout.createSequentialGroup()
+                .addGap(67, 67, 67)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 510, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(52, Short.MAX_VALUE))
         );
 
-        jTabbedPane6.addTab("Orders                   ", Orderpanel);
+        jPanel4.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 70, 520, 660));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/images/order.jpg"))); // NOI18N
+        jPanel4.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1110, 780));
+
+        jTabbedPane6.addTab("Products               ", jPanel4);
 
         jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -399,114 +447,67 @@ public class MainUI extends javax.swing.JFrame {
 
         jTabbedPane6.addTab("Cart                     ", jPanel6);
 
-        jPanel4.setForeground(new java.awt.Color(214, 107, 221));
-        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        panelorder.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel5.setBackground(new java.awt.Color(0, 0, 0,80));
-        jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Add Product", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Harrington", 1, 18), new java.awt.Color(255, 255, 255))); // NOI18N
-        jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanel10.setBackground(new java.awt.Color(0, 0, 0,80));
+        jPanel10.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Complete Order", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Harrington", 1, 18), new java.awt.Color(255, 255, 255))); // NOI18N
+        jPanel10.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        nameField.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Name", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Century Gothic", 0, 18))); // NOI18N
-        nameField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                nameFieldActionPerformed(evt);
-            }
-        });
-        jPanel5.add(nameField, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 136, 410, 60));
-
-        priceField.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Price", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Century Gothic", 0, 18))); // NOI18N
-        jPanel5.add(priceField, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 240, 410, 60));
-
-        categoryComboBox.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Category", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Century Gothic", 0, 18))); // NOI18N
-        categoryComboBox.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                categoryComboBoxActionPerformed(evt);
-            }
-        });
-        jPanel5.add(categoryComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(56, 360, 420, 69));
-
-        CloneProductButton.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
-        CloneProductButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/images/clone.jpg"))); // NOI18N
-        CloneProductButton.setText("Clone");
-        CloneProductButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CloneProductButtonActionPerformed(evt);
-            }
-        });
-        jPanel5.add(CloneProductButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 510, 140, 60));
-
-        AddProductButton.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
-        AddProductButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/images/add.jpg"))); // NOI18N
-        AddProductButton.setText("Add");
-        AddProductButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AddProductButtonActionPerformed(evt);
-            }
-        });
-        jPanel5.add(AddProductButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 510, 125, 60));
-
-        ToCardButton.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
-        ToCardButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/images/add.jpg"))); // NOI18N
-        ToCardButton.setText(" Cart");
-        ToCardButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ToCardButtonActionPerformed(evt);
-            }
-        });
-        jPanel5.add(ToCardButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 510, 120, 60));
-
-        jPanel4.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, 500, 660));
-
-        jPanel8.setBackground(new java.awt.Color(0, 0, 0,80));
-        jPanel8.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Products Item", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Harrington", 1, 18), new java.awt.Color(255, 255, 255))); // NOI18N
-        jPanel8.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-
-        tableModel.setModel(new javax.swing.table.DefaultTableModel(
+        OrderTable.setFont(new java.awt.Font("Times New Roman", 0, 14));
+        OrderTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
             new String [] {
-                "Id", "Name", "Category", "Price"
+                "Id", "Location", "TotalPrice", "Type", "customers"
             }
         ) {
             Class[] types = new Class [] {
-                java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.Double.class
+                java.lang.Integer.class, java.lang.String.class, java.lang.Double.class, java.lang.String.class, java.lang.String.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false
             };
 
             public Class getColumnClass(int columnIndex) {
                 return types [columnIndex];
             }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
         });
-        jScrollPane1.setViewportView(tableModel);
-        if (tableModel.getColumnModel().getColumnCount() > 0) {
-            tableModel.getColumnModel().getColumn(0).setMinWidth(1);
-            tableModel.getColumnModel().getColumn(0).setPreferredWidth(1);
-            tableModel.getColumnModel().getColumn(0).setMaxWidth(1);
+        OrderTable.setRowHeight(20);
+        OrderTable.setRowMargin(5);
+        jScrollPane3.setViewportView(OrderTable);
+        if (OrderTable.getColumnModel().getColumnCount() > 0) {
+            OrderTable.getColumnModel().getColumn(0).setResizable(false);
+            OrderTable.getColumnModel().getColumn(0).setPreferredWidth(1);
+            OrderTable.getColumnModel().getColumn(1).setResizable(false);
+            OrderTable.getColumnModel().getColumn(2).setResizable(false);
+            OrderTable.getColumnModel().getColumn(3).setResizable(false);
+            OrderTable.getColumnModel().getColumn(4).setResizable(false);
         }
 
-        javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
-        jPanel8.setLayout(jPanel8Layout);
-        jPanel8Layout.setHorizontalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 484, Short.MAX_VALUE)
-                .addContainerGap())
+        jPanel10.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 70, 1010, 350));
+
+        panelorder.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 1070, 480));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/images/order.jpg"))); // NOI18N
+        panelorder.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1110, 770));
+
+        javax.swing.GroupLayout OrderpanelLayout = new javax.swing.GroupLayout(Orderpanel);
+        Orderpanel.setLayout(OrderpanelLayout);
+        OrderpanelLayout.setHorizontalGroup(
+            OrderpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(panelorder, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
-        jPanel8Layout.setVerticalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel8Layout.createSequentialGroup()
-                .addGap(67, 67, 67)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 510, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(52, Short.MAX_VALUE))
+        OrderpanelLayout.setVerticalGroup(
+            OrderpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(panelorder, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 780, Short.MAX_VALUE)
         );
 
-        jPanel4.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 70, 520, 660));
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/images/order.jpg"))); // NOI18N
-        jPanel4.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1110, 780));
-
-        jTabbedPane6.addTab("Products               ", jPanel4);
+        jTabbedPane6.addTab("Orders                   ", Orderpanel);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -518,10 +519,9 @@ public class MainUI extends javax.swing.JFrame {
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(jPanel2Layout.createSequentialGroup()
                 .addComponent(jTabbedPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 810, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(58, 58, 58))
+                .addGap(0, 17, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 13, 1120, 827));
@@ -553,7 +553,7 @@ public class MainUI extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Payment type is required!");
             return;
         }
-        else if (location.isEmpty()||type.isEmpty()||CstmrName.isEmpty())
+        else if (type.isEmpty()||CstmrName.isEmpty())
         {
         JOptionPane.showMessageDialog(null, "Order type is required!");  
         return;        
@@ -578,8 +578,8 @@ public class MainUI extends javax.swing.JFrame {
         if (type.isEmpty())
         {
                 order= builder.setCstmrName(CstmrName)              
-                .setTotalPrice(totalAmount)
-                .setLocation(location)
+                .setTotalPrice(totalAmount)          
+                .setType(type)
                 .build();
         }
         else {order= OrderFactory.createOrderProcessor(location, totalAmount, type, CstmrName);}
@@ -749,7 +749,7 @@ public class MainUI extends javax.swing.JFrame {
     }//GEN-LAST:event_AddProductButtonActionPerformed
 
     private void nameFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nameFieldActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_nameFieldActionPerformed
 
     /**

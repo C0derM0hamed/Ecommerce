@@ -50,10 +50,9 @@
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace max="32767" attributes="0"/>
+              <Group type="102" alignment="0" attributes="0">
                   <Component id="jTabbedPane6" min="-2" pref="810" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="17" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -126,135 +125,276 @@
                 </Component>
               </SubComponents>
             </Container>
-            <Container class="javax.swing.JPanel" name="Orderpanel">
+            <Container class="javax.swing.JPanel" name="jPanel4">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="dd" green="6b" red="d6" type="rgb"/>
+                </Property>
+              </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-                  <JTabbedPaneConstraints tabName="Orders                   ">
-                    <Property name="tabTitle" type="java.lang.String" value="Orders                   "/>
+                  <JTabbedPaneConstraints tabName="Products               ">
+                    <Property name="tabTitle" type="java.lang.String" value="Products               "/>
                   </JTabbedPaneConstraints>
                 </Constraint>
               </Constraints>
 
-              <Layout>
-                <DimensionLayout dim="0">
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="panelorder" max="32767" attributes="0"/>
-                  </Group>
-                </DimensionLayout>
-                <DimensionLayout dim="1">
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="panelorder" alignment="1" pref="774" max="32767" attributes="0"/>
-                  </Group>
-                </DimensionLayout>
+              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+                <Property name="useNullLayout" type="boolean" value="false"/>
               </Layout>
               <SubComponents>
-                <Container class="javax.swing.JPanel" name="panelorder">
+                <Container class="javax.swing.JPanel" name="jPanel5">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="new java.awt.Color(0, 0, 0,80)" type="code"/>
+                    </Property>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                        <TitledBorder title="Add Product">
+                          <Font PropertyName="font" name="Harrington" size="18" style="1"/>
+                          <Color PropertyName="color" blue="ff" green="ff" red="ff" type="rgb"/>
+                        </TitledBorder>
+                      </Border>
+                    </Property>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                      <AbsoluteConstraints x="30" y="70" width="500" height="660"/>
+                    </Constraint>
+                  </Constraints>
 
                   <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
                     <Property name="useNullLayout" type="boolean" value="false"/>
                   </Layout>
                   <SubComponents>
-                    <Container class="javax.swing.JPanel" name="jPanel10">
+                    <Component class="javax.swing.JTextField" name="nameField">
                       <Properties>
-                        <Property name="background" type="java.awt.Color" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-                          <Connection code="new java.awt.Color(0, 0, 0,80)" type="code"/>
+                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                          <SerializedValue value="-84,-19,0,5,115,114,0,14,106,97,118,97,46,97,119,116,46,67,111,108,111,114,1,-91,23,-125,16,-113,51,117,2,0,5,70,0,6,102,97,108,112,104,97,73,0,5,118,97,108,117,101,76,0,2,99,115,116,0,27,76,106,97,118,97,47,97,119,116,47,99,111,108,111,114,47,67,111,108,111,114,83,112,97,99,101,59,91,0,9,102,114,103,98,118,97,108,117,101,116,0,2,91,70,91,0,6,102,118,97,108,117,101,113,0,126,0,2,120,112,0,0,0,0,-1,-1,-1,-1,112,112,112"/>
                         </Property>
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                           <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
-                            <TitledBorder title="Complete Order">
-                              <Font PropertyName="font" name="Harrington" size="18" style="1"/>
-                              <Color PropertyName="color" blue="ff" green="ff" red="ff" type="rgb"/>
+                            <TitledBorder title="Name">
+                              <Font PropertyName="font" name="Century Gothic" size="18" style="0"/>
+                            </TitledBorder>
+                          </Border>
+                        </Property>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="nameFieldActionPerformed"/>
+                      </Events>
+                      <Constraints>
+                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                          <AbsoluteConstraints x="60" y="136" width="410" height="60"/>
+                        </Constraint>
+                      </Constraints>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="priceField">
+                      <Properties>
+                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                            <TitledBorder title="Price">
+                              <Font PropertyName="font" name="Century Gothic" size="18" style="0"/>
                             </TitledBorder>
                           </Border>
                         </Property>
                       </Properties>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                          <AbsoluteConstraints x="20" y="60" width="1070" height="480"/>
+                          <AbsoluteConstraints x="60" y="240" width="410" height="60"/>
                         </Constraint>
                       </Constraints>
-
-                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
-                        <Property name="useNullLayout" type="boolean" value="false"/>
-                      </Layout>
-                      <SubComponents>
-                        <Container class="javax.swing.JScrollPane" name="jScrollPane3">
-                          <AuxValues>
-                            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
-                          </AuxValues>
-                          <Constraints>
-                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                              <AbsoluteConstraints x="40" y="70" width="1010" height="350"/>
-                            </Constraint>
-                          </Constraints>
-
-                          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-                          <SubComponents>
-                            <Component class="javax.swing.JTable" name="OrderTable">
-                              <Properties>
-                                <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-                                  <Connection code="new java.awt.Font(&quot;Times New Roman&quot;, 0, 14)" type="code"/>
-                                </Property>
-                                <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-                                  <Connection code="new javax.swing.table.DefaultTableModel(&#xa;    new Object [][] {&#xa;&#xa;    },&#xa;    new String [] {&#xa;        &quot;Id&quot;, &quot;Location&quot;, &quot;TotalPrice&quot;, &quot;Type&quot;, &quot;customers&quot;&#xa;    }&#xa;) {&#xa;    Class[] types = new Class [] {&#xa;        java.lang.Integer.class, java.lang.String.class, java.lang.Double.class, java.lang.String.class, java.lang.String.class&#xa;    };&#xa;    boolean[] canEdit = new boolean [] {&#xa;        false, false, false, false, false&#xa;    };&#xa;&#xa;    public Class getColumnClass(int columnIndex) {&#xa;        return types [columnIndex];&#xa;    }&#xa;&#xa;    public boolean isCellEditable(int rowIndex, int columnIndex) {&#xa;        return canEdit [columnIndex];&#xa;    }&#xa;}" type="code"/>
-                                </Property>
-                                <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
-                                  <TableColumnModel selectionModel="0">
-                                    <Column maxWidth="-1" minWidth="-1" prefWidth="1" resizable="false">
-                                      <Title/>
-                                      <Editor/>
-                                      <Renderer/>
-                                    </Column>
-                                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
-                                      <Title/>
-                                      <Editor/>
-                                      <Renderer/>
-                                    </Column>
-                                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
-                                      <Title/>
-                                      <Editor/>
-                                      <Renderer/>
-                                    </Column>
-                                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
-                                      <Title/>
-                                      <Editor/>
-                                      <Renderer/>
-                                    </Column>
-                                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
-                                      <Title/>
-                                      <Editor/>
-                                      <Renderer/>
-                                    </Column>
-                                  </TableColumnModel>
-                                </Property>
-                                <Property name="rowHeight" type="int" value="20"/>
-                                <Property name="rowMargin" type="int" value="5"/>
-                                <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
-                                  <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
-                                </Property>
-                              </Properties>
-                              <AuxValues>
-                                <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JTable()"/>
-                              </AuxValues>
-                            </Component>
-                          </SubComponents>
-                        </Container>
-                      </SubComponents>
-                    </Container>
-                    <Component class="javax.swing.JLabel" name="jLabel3">
+                    </Component>
+                    <Component class="javax.swing.JComboBox" name="categoryComboBox">
                       <Properties>
-                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/ui/images/order.jpg"/>
+                        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                          <StringArray count="0"/>
+                        </Property>
+                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                            <TitledBorder title="Category">
+                              <Font PropertyName="font" name="Century Gothic" size="18" style="0"/>
+                            </TitledBorder>
+                          </Border>
                         </Property>
                       </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="categoryComboBoxActionPerformed"/>
+                      </Events>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                      </AuxValues>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                          <AbsoluteConstraints x="0" y="0" width="1110" height="770"/>
+                          <AbsoluteConstraints x="56" y="360" width="420" height="69"/>
+                        </Constraint>
+                      </Constraints>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="CloneProductButton">
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Century Gothic" size="18" style="0"/>
+                        </Property>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/ui/images/clone.jpg"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="Clone"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CloneProductButtonActionPerformed"/>
+                      </Events>
+                      <Constraints>
+                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                          <AbsoluteConstraints x="340" y="510" width="140" height="60"/>
+                        </Constraint>
+                      </Constraints>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="AddProductButton">
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Century Gothic" size="18" style="0"/>
+                        </Property>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/ui/images/add.jpg"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="Add"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AddProductButtonActionPerformed"/>
+                      </Events>
+                      <Constraints>
+                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                          <AbsoluteConstraints x="200" y="510" width="125" height="60"/>
+                        </Constraint>
+                      </Constraints>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="ToCardButton">
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Century Gothic" size="18" style="0"/>
+                        </Property>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/ui/images/add.jpg"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value=" Cart"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ToCardButtonActionPerformed"/>
+                      </Events>
+                      <Constraints>
+                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                          <AbsoluteConstraints x="60" y="510" width="120" height="60"/>
                         </Constraint>
                       </Constraints>
                     </Component>
                   </SubComponents>
                 </Container>
+                <Container class="javax.swing.JPanel" name="jPanel8">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="new java.awt.Color(0, 0, 0,80)" type="code"/>
+                    </Property>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                        <TitledBorder title="Products Item">
+                          <Font PropertyName="font" name="Harrington" size="18" style="1"/>
+                          <Color PropertyName="color" blue="ff" green="ff" red="ff" type="rgb"/>
+                        </TitledBorder>
+                      </Border>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Tahoma" size="14" style="0"/>
+                    </Property>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                      <AbsoluteConstraints x="580" y="70" width="520" height="660"/>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jScrollPane1" pref="484" max="32767" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
+                              <Component id="jScrollPane1" min="-2" pref="510" max="-2" attributes="0"/>
+                              <EmptySpace pref="52" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+                      <AuxValues>
+                        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                      </AuxValues>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                      <SubComponents>
+                        <Component class="javax.swing.JTable" name="tableModel">
+                          <Properties>
+                            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                              <Table columnCount="4" rowCount="0">
+                                <Column editable="true" title="Id" type="java.lang.Integer"/>
+                                <Column editable="true" title="Name" type="java.lang.String"/>
+                                <Column editable="true" title="Category" type="java.lang.String"/>
+                                <Column editable="true" title="Price" type="java.lang.Double"/>
+                              </Table>
+                            </Property>
+                            <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                              <TableColumnModel selectionModel="0">
+                                <Column maxWidth="1" minWidth="1" prefWidth="1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                              </TableColumnModel>
+                            </Property>
+                            <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                              <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                            </Property>
+                          </Properties>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                  </SubComponents>
+                </Container>
+                <Component class="javax.swing.JLabel" name="jLabel2">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/ui/images/order.jpg"/>
+                    </Property>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                      <AbsoluteConstraints x="0" y="0" width="1110" height="780"/>
+                    </Constraint>
+                  </Constraints>
+                </Component>
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel6">
@@ -587,276 +727,135 @@
                 </Component>
               </SubComponents>
             </Container>
-            <Container class="javax.swing.JPanel" name="jPanel4">
-              <Properties>
-                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="dd" green="6b" red="d6" type="rgb"/>
-                </Property>
-              </Properties>
+            <Container class="javax.swing.JPanel" name="Orderpanel">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-                  <JTabbedPaneConstraints tabName="Products               ">
-                    <Property name="tabTitle" type="java.lang.String" value="Products               "/>
+                  <JTabbedPaneConstraints tabName="Orders                   ">
+                    <Property name="tabTitle" type="java.lang.String" value="Orders                   "/>
                   </JTabbedPaneConstraints>
                 </Constraint>
               </Constraints>
 
-              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
-                <Property name="useNullLayout" type="boolean" value="false"/>
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="panelorder" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="panelorder" alignment="1" pref="780" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Container class="javax.swing.JPanel" name="jPanel5">
-                  <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-                      <Connection code="new java.awt.Color(0, 0, 0,80)" type="code"/>
-                    </Property>
-                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-                      <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
-                        <TitledBorder title="Add Product">
-                          <Font PropertyName="font" name="Harrington" size="18" style="1"/>
-                          <Color PropertyName="color" blue="ff" green="ff" red="ff" type="rgb"/>
-                        </TitledBorder>
-                      </Border>
-                    </Property>
-                  </Properties>
-                  <Constraints>
-                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="30" y="70" width="500" height="660"/>
-                    </Constraint>
-                  </Constraints>
+                <Container class="javax.swing.JPanel" name="panelorder">
 
                   <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
                     <Property name="useNullLayout" type="boolean" value="false"/>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JTextField" name="nameField">
+                    <Container class="javax.swing.JPanel" name="jPanel10">
                       <Properties>
-                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-                          <SerializedValue value="-84,-19,0,5,115,114,0,14,106,97,118,97,46,97,119,116,46,67,111,108,111,114,1,-91,23,-125,16,-113,51,117,2,0,5,70,0,6,102,97,108,112,104,97,73,0,5,118,97,108,117,101,76,0,2,99,115,116,0,27,76,106,97,118,97,47,97,119,116,47,99,111,108,111,114,47,67,111,108,111,114,83,112,97,99,101,59,91,0,9,102,114,103,98,118,97,108,117,101,116,0,2,91,70,91,0,6,102,118,97,108,117,101,113,0,126,0,2,120,112,0,0,0,0,-1,-1,-1,-1,112,112,112"/>
+                        <Property name="background" type="java.awt.Color" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                          <Connection code="new java.awt.Color(0, 0, 0,80)" type="code"/>
                         </Property>
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                           <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
-                            <TitledBorder title="Name">
-                              <Font PropertyName="font" name="Century Gothic" size="18" style="0"/>
-                            </TitledBorder>
-                          </Border>
-                        </Property>
-                      </Properties>
-                      <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="nameFieldActionPerformed"/>
-                      </Events>
-                      <Constraints>
-                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                          <AbsoluteConstraints x="60" y="136" width="410" height="60"/>
-                        </Constraint>
-                      </Constraints>
-                    </Component>
-                    <Component class="javax.swing.JTextField" name="priceField">
-                      <Properties>
-                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-                          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
-                            <TitledBorder title="Price">
-                              <Font PropertyName="font" name="Century Gothic" size="18" style="0"/>
+                            <TitledBorder title="Complete Order">
+                              <Font PropertyName="font" name="Harrington" size="18" style="1"/>
+                              <Color PropertyName="color" blue="ff" green="ff" red="ff" type="rgb"/>
                             </TitledBorder>
                           </Border>
                         </Property>
                       </Properties>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                          <AbsoluteConstraints x="60" y="240" width="410" height="60"/>
+                          <AbsoluteConstraints x="20" y="60" width="1070" height="480"/>
                         </Constraint>
                       </Constraints>
-                    </Component>
-                    <Component class="javax.swing.JComboBox" name="categoryComboBox">
-                      <Properties>
-                        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                          <StringArray count="0"/>
-                        </Property>
-                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-                          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
-                            <TitledBorder title="Category">
-                              <Font PropertyName="font" name="Century Gothic" size="18" style="0"/>
-                            </TitledBorder>
-                          </Border>
-                        </Property>
-                      </Properties>
-                      <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="categoryComboBoxActionPerformed"/>
-                      </Events>
-                      <AuxValues>
-                        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-                      </AuxValues>
-                      <Constraints>
-                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                          <AbsoluteConstraints x="56" y="360" width="420" height="69"/>
-                        </Constraint>
-                      </Constraints>
-                    </Component>
-                    <Component class="javax.swing.JButton" name="CloneProductButton">
-                      <Properties>
-                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                          <Font name="Century Gothic" size="18" style="0"/>
-                        </Property>
-                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/ui/images/clone.jpg"/>
-                        </Property>
-                        <Property name="text" type="java.lang.String" value="Clone"/>
-                      </Properties>
-                      <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CloneProductButtonActionPerformed"/>
-                      </Events>
-                      <Constraints>
-                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                          <AbsoluteConstraints x="340" y="510" width="140" height="60"/>
-                        </Constraint>
-                      </Constraints>
-                    </Component>
-                    <Component class="javax.swing.JButton" name="AddProductButton">
-                      <Properties>
-                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                          <Font name="Century Gothic" size="18" style="0"/>
-                        </Property>
-                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/ui/images/add.jpg"/>
-                        </Property>
-                        <Property name="text" type="java.lang.String" value="Add"/>
-                      </Properties>
-                      <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AddProductButtonActionPerformed"/>
-                      </Events>
-                      <Constraints>
-                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                          <AbsoluteConstraints x="200" y="510" width="125" height="60"/>
-                        </Constraint>
-                      </Constraints>
-                    </Component>
-                    <Component class="javax.swing.JButton" name="ToCardButton">
-                      <Properties>
-                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                          <Font name="Century Gothic" size="18" style="0"/>
-                        </Property>
-                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/ui/images/add.jpg"/>
-                        </Property>
-                        <Property name="text" type="java.lang.String" value=" Cart"/>
-                      </Properties>
-                      <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ToCardButtonActionPerformed"/>
-                      </Events>
-                      <Constraints>
-                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                          <AbsoluteConstraints x="60" y="510" width="120" height="60"/>
-                        </Constraint>
-                      </Constraints>
-                    </Component>
-                  </SubComponents>
-                </Container>
-                <Container class="javax.swing.JPanel" name="jPanel8">
-                  <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-                      <Connection code="new java.awt.Color(0, 0, 0,80)" type="code"/>
-                    </Property>
-                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-                      <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
-                        <TitledBorder title="Products Item">
-                          <Font PropertyName="font" name="Harrington" size="18" style="1"/>
-                          <Color PropertyName="color" blue="ff" green="ff" red="ff" type="rgb"/>
-                        </TitledBorder>
-                      </Border>
-                    </Property>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Tahoma" size="14" style="0"/>
-                    </Property>
-                  </Properties>
-                  <Constraints>
-                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="580" y="70" width="520" height="660"/>
-                    </Constraint>
-                  </Constraints>
 
-                  <Layout>
-                    <DimensionLayout dim="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jScrollPane1" pref="484" max="32767" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                    </DimensionLayout>
-                    <DimensionLayout dim="1">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
-                              <Component id="jScrollPane1" min="-2" pref="510" max="-2" attributes="0"/>
-                              <EmptySpace pref="52" max="32767" attributes="0"/>
-                          </Group>
-                      </Group>
-                    </DimensionLayout>
-                  </Layout>
-                  <SubComponents>
-                    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
-                      <AuxValues>
-                        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
-                      </AuxValues>
-
-                      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+                        <Property name="useNullLayout" type="boolean" value="false"/>
+                      </Layout>
                       <SubComponents>
-                        <Component class="javax.swing.JTable" name="tableModel">
-                          <Properties>
-                            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                              <Table columnCount="4" rowCount="0">
-                                <Column editable="true" title="Id" type="java.lang.Integer"/>
-                                <Column editable="true" title="Name" type="java.lang.String"/>
-                                <Column editable="true" title="Category" type="java.lang.String"/>
-                                <Column editable="true" title="Price" type="java.lang.Double"/>
-                              </Table>
-                            </Property>
-                            <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
-                              <TableColumnModel selectionModel="0">
-                                <Column maxWidth="1" minWidth="1" prefWidth="1" resizable="true">
-                                  <Title/>
-                                  <Editor/>
-                                  <Renderer/>
-                                </Column>
-                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                                  <Title/>
-                                  <Editor/>
-                                  <Renderer/>
-                                </Column>
-                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                                  <Title/>
-                                  <Editor/>
-                                  <Renderer/>
-                                </Column>
-                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                                  <Title/>
-                                  <Editor/>
-                                  <Renderer/>
-                                </Column>
-                              </TableColumnModel>
-                            </Property>
-                            <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
-                              <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
-                            </Property>
-                          </Properties>
-                        </Component>
+                        <Container class="javax.swing.JScrollPane" name="jScrollPane3">
+                          <AuxValues>
+                            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                          </AuxValues>
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                              <AbsoluteConstraints x="40" y="70" width="1010" height="350"/>
+                            </Constraint>
+                          </Constraints>
+
+                          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                          <SubComponents>
+                            <Component class="javax.swing.JTable" name="OrderTable">
+                              <Properties>
+                                <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                                  <Connection code="new java.awt.Font(&quot;Times New Roman&quot;, 0, 14)" type="code"/>
+                                </Property>
+                                <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                                  <Connection code="new javax.swing.table.DefaultTableModel(&#xa;    new Object [][] {&#xa;&#xa;    },&#xa;    new String [] {&#xa;        &quot;Id&quot;, &quot;Location&quot;, &quot;TotalPrice&quot;, &quot;Type&quot;, &quot;customers&quot;&#xa;    }&#xa;) {&#xa;    Class[] types = new Class [] {&#xa;        java.lang.Integer.class, java.lang.String.class, java.lang.Double.class, java.lang.String.class, java.lang.String.class&#xa;    };&#xa;    boolean[] canEdit = new boolean [] {&#xa;        false, false, false, false, false&#xa;    };&#xa;&#xa;    public Class getColumnClass(int columnIndex) {&#xa;        return types [columnIndex];&#xa;    }&#xa;&#xa;    public boolean isCellEditable(int rowIndex, int columnIndex) {&#xa;        return canEdit [columnIndex];&#xa;    }&#xa;}" type="code"/>
+                                </Property>
+                                <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                                  <TableColumnModel selectionModel="0">
+                                    <Column maxWidth="-1" minWidth="-1" prefWidth="1" resizable="false">
+                                      <Title/>
+                                      <Editor/>
+                                      <Renderer/>
+                                    </Column>
+                                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                                      <Title/>
+                                      <Editor/>
+                                      <Renderer/>
+                                    </Column>
+                                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                                      <Title/>
+                                      <Editor/>
+                                      <Renderer/>
+                                    </Column>
+                                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                                      <Title/>
+                                      <Editor/>
+                                      <Renderer/>
+                                    </Column>
+                                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                                      <Title/>
+                                      <Editor/>
+                                      <Renderer/>
+                                    </Column>
+                                  </TableColumnModel>
+                                </Property>
+                                <Property name="rowHeight" type="int" value="20"/>
+                                <Property name="rowMargin" type="int" value="5"/>
+                                <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                                  <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                                </Property>
+                              </Properties>
+                              <AuxValues>
+                                <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JTable()"/>
+                              </AuxValues>
+                            </Component>
+                          </SubComponents>
+                        </Container>
                       </SubComponents>
                     </Container>
+                    <Component class="javax.swing.JLabel" name="jLabel3">
+                      <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/ui/images/order.jpg"/>
+                        </Property>
+                      </Properties>
+                      <Constraints>
+                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                          <AbsoluteConstraints x="0" y="0" width="1110" height="770"/>
+                        </Constraint>
+                      </Constraints>
+                    </Component>
                   </SubComponents>
                 </Container>
-                <Component class="javax.swing.JLabel" name="jLabel2">
-                  <Properties>
-                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/ui/images/order.jpg"/>
-                    </Property>
-                  </Properties>
-                  <Constraints>
-                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="0" y="0" width="1110" height="780"/>
-                    </Constraint>
-                  </Constraints>
-                </Component>
               </SubComponents>
             </Container>
           </SubComponents>
